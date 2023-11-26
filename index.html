@@ -1,1 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotate Carousel</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="javascript.js"></script>
+</head>
+<body>
+    <section class="rotate-Carousel-section">
+        <div id="rotate-Carousel"></div>
+    </section>
+</body>
 
+<!-- **************************************************************************************** -->
+<script type='text/javascript'>
+    carousel({id:'', //Enter arbitrary but unique ID of this slideshow instance
+    border:'',
+    size_mode:'image', //Enter "carousel" or "image". Affects the width and height parameters below.
+    width:800, //Enter width of image or entire carousel, depending on above value
+    height:500, //Enter height of image or entire carousel, depending on above value
+    sides:6, //# of sides of the carousel. What's shown = sides/2. Even integer with sides/2< total images is best
+    steps:96, //# of animation steps. More = smoother, but more CPU intensive
+    speed:2, //Speed of slideshow. Larger = faster.
+    direction:'left', //Direction of slideshow. Enter "top", "bottom", "left", or "right"
+    
+    // تصاویر اسلایدشو --------
+    images:[
+    'images/1.jpg',
+    'images/2.jpg',
+    'images/3.jpg',
+    'images/4.jpg',
+    'images/5.jpg',
+    'images/6.jpg'
+    ],
+    
+    // تنظیم پهنا و رنگ حاشیه تصاویر -------
+    image_border_width:5,
+    image_border_color:'#000'
+    
+    });
+    </script>
+
+</html>

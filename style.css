@@ -1,1 +1,6 @@
-
+*{margin: 0;}
+#rotate-Carousel{
+    position: relative;
+    overflow:hidden !important;
+    background-color: black;
+}

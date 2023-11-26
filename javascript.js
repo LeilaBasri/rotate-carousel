@@ -6,8 +6,8 @@ function carousel(params){
     if(!(params.speed>0 && isFinite(params.speed)))params.speed=8;
     if(!(params.image_border_width>=0 && isFinite(params.image_border_width)))params.image_border_width=0;
     if(isFinite(params.id)||!params.id)params.id='bad_id_given_'+Math.random();
-    
-    document.write("<div style='position:relative;overflow:hidden;' id='"+params.id.replace(/[^a-zA-Z0-9]+/g,'_')+"'></div>");
+    var gallerydiv = document.getElementById("rotate-Carousel");
+    gallerydiv.innerHTML="<div style='position:relative;overflow:hidden;' id='"+params.id.replace(/[^a-zA-Z0-9]+/g,'_')+"'></div>";
     var cdiv=document.getElementById(params.id.replace(/[^a-zA-Z0-9]+/g,'_'))
     cdiv.style.width=params.width+'px';
     cdiv.style.height=params.height+'px';
